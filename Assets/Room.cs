@@ -21,8 +21,8 @@ internal class Room{
 	internal bool isHit(Room target){
 		if (roomType == RoomType.NON)
 			return false;
-		if (Mathf.Abs (pos.x - target.pos.x) < w + target.w &&
-		    Mathf.Abs (pos.y - target.pos.y) < h + target.h) {
+		if (Mathf.Abs (pos.x - target.pos.x) < w + target.w+1 &&
+		    Mathf.Abs (pos.y - target.pos.y) < h + target.h+1) {
 			return true;
 		}
 		return false;
