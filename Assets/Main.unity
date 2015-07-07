@@ -134,6 +134,10 @@ Prefab:
       propertyPath: JoyStick
       value: 
       objectReference: {fileID: 1812585668}
+    - target: {fileID: 11404896, guid: 20854bad9f8ecfb41904a83b74baae7e, type: 2}
+      propertyPath: CameraController
+      value: 
+      objectReference: {fileID: 181250982}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20854bad9f8ecfb41904a83b74baae7e, type: 2}
   m_IsPrefabParent: 0
@@ -155,8 +159,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 181250981}
+  - 114: {fileID: 181250982}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CameraController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,13 +173,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181250980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: .215675429, y: .37210992, z: -.0893356949, w: .898352683}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1247228087}
+  - {fileID: 787786620}
   m_Father: {fileID: 1813604298}
   m_RootOrder: 0
+--- !u!114 &181250982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181250980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2749c50db87863a40ae94004a4d10162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCharacter: {fileID: 55173958}
 --- !u!1 &404408166
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +261,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &542738668 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 165004, guid: 328275cabdde53846b77b4b94aed1c9c, type: 2}
+  m_PrefabInternal: {fileID: 1367543131}
+--- !u!114 &542738669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542738668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77547edda39b45d4099896656e9fa2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Android_Banner: ca-app-pub-8266025531581562/2329688532
+  Android_Interstitial: ca-app-pub-8266025531581562/3806421732
+  ios_Banner: 
+  ios_Interstitial: 
 --- !u!1 &766640789
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,10 +368,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 787786618}
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: .610000014, y: .952000022, z: -1.71700001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1813604298}
+  m_Father: {fileID: 181250981}
   m_RootOrder: 1
 --- !u!1 &1247228082
 GameObject:
@@ -416,7 +453,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1247228082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 181250981}
@@ -578,7 +615,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 181250981}
-  - {fileID: 787786620}
   - {fileID: 55173962}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -643,7 +679,7 @@ Camera:
   m_GameObject: {fileID: 1921955424}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
