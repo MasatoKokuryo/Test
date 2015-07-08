@@ -129,11 +129,11 @@ Prefab:
     - target: {fileID: 11479210, guid: 20854bad9f8ecfb41904a83b74baae7e, type: 2}
       propertyPath: JoyStick
       value: 
-      objectReference: {fileID: 1812585668}
+      objectReference: {fileID: 0}
     - target: {fileID: 11404896, guid: 20854bad9f8ecfb41904a83b74baae7e, type: 2}
       propertyPath: JoyStick
       value: 
-      objectReference: {fileID: 1812585668}
+      objectReference: {fileID: 0}
     - target: {fileID: 11404896, guid: 20854bad9f8ecfb41904a83b74baae7e, type: 2}
       propertyPath: CameraController
       value: 
@@ -280,6 +280,8 @@ MonoBehaviour:
   Android_Interstitial: ca-app-pub-8266025531581562/3806421732
   ios_Banner: 
   ios_Interstitial: 
+  Android_TestDevices:
+  - 38C3D8EAC82710DC73208661ED6B9586
 --- !u!1 &766640789
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +290,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 766640790}
+  - 114: {fileID: 766640791}
   m_Layer: 5
   m_Name: JoyStick
   m_TagString: Untagged
@@ -310,9 +313,20 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 50}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &766640791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766640789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b5b301427fd8b47bc917db10620909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &787786618
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +524,6 @@ GameObject:
   - 224: {fileID: 1812585667}
   - 222: {fileID: 1812585670}
   - 114: {fileID: 1812585669}
-  - 114: {fileID: 1812585668}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -535,17 +548,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1812585668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1812585666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77b5b301427fd8b47bc917db10620909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1812585669
 MonoBehaviour:
   m_ObjectHideFlags: 0
