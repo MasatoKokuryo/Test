@@ -2,35 +2,43 @@
 https://redmine.tayu.jp/projects/product3/wiki/Ad_account
 
 
-¡AdMob‚Ì‘g‚İ‚İ
-‚±‚±‚ª•ª‚©‚è‚â‚·‚°
+â– AdMobã®çµ„ã¿è¾¼ã¿
+ã“ã“ãŒåˆ†ã‹ã‚Šã‚„ã™ã’
 http://games.genieus.co.jp/unity/admob_unity/
 
-Android‚ÌI—¹ƒ_ƒCƒAƒƒO—p‚ÉˆÈ‰º‚Ìƒvƒ‰ƒOƒCƒ“‚ğ’Ç‰ÁiMIT Licensej
+Androidã®çµ‚äº†ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ç”¨ã«ä»¥ä¸‹ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’è¿½åŠ ï¼ˆMIT Licenseï¼‰
 https://github.com/asus4/UnityNativeDialogPlugin
 
-ƒpƒbƒP[ƒW‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚ÄƒTƒ“ƒvƒ‹ƒV[ƒ“ì¬
-http://games.genieus.co.jp/unity/admob_unity/@‚©‚çManagerƒNƒ‰ƒX‚ğƒRƒsƒy‚µ‚Ä’Ç‰Á
-google-play-services_lib@‚ğAndroidSDK‚©‚çÅV‚ğ“Š“ü
 
-AdMobManager‚ÉAdMobŠÇ—ƒy[ƒW‚©‚çƒAƒvƒŠ–ˆ‚ÌKey‚ğæ“¾‚µ“ü‚ê‚é
+ãƒ»ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã‚µãƒ³ãƒ—ãƒ«ã‚·ãƒ¼ãƒ³ä½œæˆ
+ãƒ»http://games.genieus.co.jp/unity/admob_unity/ã€€ã‹ã‚‰Managerã‚¯ãƒ©ã‚¹ã‚’ã‚³ãƒ”ãƒšã—ã¦è¿½åŠ 
+ãƒ»google-play-services_libã€€ã‚’AndroidSDKã‹ã‚‰æœ€æ–°ã‚’æŠ•å…¥
+ãƒ»AdMobManagerã«AdMobç®¡ç†ãƒšãƒ¼ã‚¸ã‹ã‚‰ã‚¢ãƒ—ãƒªæ¯ã®Keyã‚’å–å¾—ã—å…¥ã‚Œã‚‹
 ca-app-pub-8266025531581562/2329688532
 ca-app-pub-8266025531581562/3806421732
-ƒeƒXƒgƒfƒoƒCƒXID‚ğ’²‚×‚Ä“ü‚ê‚é(‚±‚ê“ü‚ê‚È‚¢‚Æ–{”Ôˆµ‚¢‚ÅLƒ^ƒbƒv‚µ‚Ü‚­‚é‚Æƒoƒ“‚³‚ê‚é‚Æ‚©)
+ãƒ»ãƒ†ã‚¹ãƒˆãƒ‡ãƒã‚¤ã‚¹IDã‚’èª¿ã¹ã¦å…¥ã‚Œã‚‹(ã“ã‚Œå…¥ã‚Œãªã„ã¨æœ¬ç•ªæ‰±ã„ã§åºƒå‘Šã‚¿ãƒƒãƒ—ã—ã¾ãã‚‹ã¨ãƒãƒ³ã•ã‚Œã‚‹ã¨ã‹)
 38C3D8EAC82710DC73208661ED6B9586
 
-¡TapJoy‚Ì‘g‚İ‚İ
+â– nendã®çµ„ã¿è¾¼ã¿
 
-ƒpƒbƒP[ƒW‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚ÄƒTƒ“ƒvƒ‹ƒV[ƒ“‹N“®
-ƒƒjƒ…[>window>Tapjoy‚©‚çˆÈ‰º‚ÌƒL[‚ğ“ü—Í
+ãƒ»nendSDK_Unity_Plugin-1.3.1ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+NendAdMobMediationAdapter_Android/nendAdapter-1.2.1.jarã‚’nendPlugin.jarã®æ¨ªã«è¿½åŠ 
+
+apiKey	bd664004964a52d40fbbd1475b9df0b40f2ce09a
+spotID	331403
+
+â– TapJoyã®çµ„ã¿è¾¼ã¿
+
+ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã‚µãƒ³ãƒ—ãƒ«ã‚·ãƒ¼ãƒ³èµ·å‹•
+ãƒ¡ãƒ‹ãƒ¥ãƒ¼>window>Tapjoyã‹ã‚‰ä»¥ä¸‹ã®ã‚­ãƒ¼ã‚’å…¥åŠ›
 
 SDK Key
 iOS: Bk9Ek_Z7SkKi33NXM7ThIAEBDdhDypx7nLmwkHGapC0sk_ovGMAuk-kp2VbI
 Android: uHRy2uWBRLm0LxqVZOamFgECfvhlNXGr8ESOox0kkZfwC399kttGIkPEbEBe
 
-TapJoySampleAndroidManifest‚ğAndroidManifest‚ÖƒŠƒl[ƒ€
+TapJoySampleAndroidManifestã‚’AndroidManifestã¸ãƒªãƒãƒ¼ãƒ 
 
 
-¡AdMob‚ÆTapJoy‚Ì‘g‚İ‚İ
-google-play-services_libˆÈŠO‚Í‹£‡‚µ‚È‚¢‚Ì‚Å‚»‚Ì‚Ü‚Ü’Ç‰Á
-google-play-services_lib‚ÍAndroidSDK‚©‚çƒCƒ“ƒXƒg[ƒ‹‚µ‚½•¨‚ğ—˜—pATapJoy‚Ì•¨‚ÍƒpƒbƒP[ƒWƒCƒ“ƒXƒg[ƒ‹‚ÉŠO‚·
+â– AdMobã¨TapJoyã®çµ„ã¿è¾¼ã¿
+google-play-services_libä»¥å¤–ã¯ç«¶åˆã—ãªã„ã®ã§ãã®ã¾ã¾è¿½åŠ 
+google-play-services_libã¯AndroidSDKã‹ã‚‰ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸç‰©ã‚’åˆ©ç”¨ã€TapJoyã®ç‰©ã¯ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ™‚ã«å¤–ã™

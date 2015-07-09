@@ -44,5 +44,6 @@ Temporary Items
 *.csproj
 Library/*
 *.sln
+*.apk
 Temp/*
 Assets/Sample/*
