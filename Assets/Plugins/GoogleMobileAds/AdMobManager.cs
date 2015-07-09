@@ -14,14 +14,29 @@ public class AdMobManager : MonoBehaviour {
 	[SerializeField] List<string> Android_TestDevices;
 
 	InterstitialAd currentInterstitial;
-	AdRequest request;
-
+	BannerView currentBannerView; 
+	
 	//アプリ終了時の広告か
 	bool quitInterstitialFlag = false; 
 	bool isDialog = false; 
-	
+
+	//シングルトン用
+	public static AdMobManager Instance {
+		get;
+		private set;
+	}
 	// Use this for initialization
 	void Awake () {
+		if (Instance == null) {
+			//常駐
+			DontDestroyOnLoad (gameObject);
+			Instance = this;
+		} else {
+			Destroy(gameObject);
+			return;
+		}
+
+		// ロードが終わってないと表示できず、ロードに時間かかるので先読みする
 		CreateInterstitial ();
 		// バナー広告を表示
 		RequestBanner ();
@@ -36,35 +51,28 @@ public class AdMobManager : MonoBehaviour {
 			isDialog = true;
 			quitInterstitialFlag = true;
 			currentInterstitial.Show ();
-		}
-	}
-	IEnumerator ExitDialog () {
-		isDialog = true;
-		yield return null;
-
-		/*
-		// アプリケーション終了
-		DialogManager.Instance.SetLabel("Yes", "No", "Close");
-		DialogManager.Instance.ShowSelectDialog(
-			"終了確認",
-			"アプリを終了しますか？",
-			(bool result) =>
-			{
-			if(result){
-				quitInterstitialFlag = true;
-				CreateInterstitial ();
-				currentInterstitial.Show ();
+			/*
+			// アプリケーション終了
+			DialogManager.Instance.SetLabel("Yes", "No", "Close");
+			DialogManager.Instance.ShowSelectDialog(
+				"終了確認",
+				"アプリを終了しますか？",
+				(bool result) =>
+				{
+				if(result){
+					quitInterstitialFlag = true;
+//					CreateInterstitial ();
+					currentInterstitial.Show ();
+				}
+				isDialog = false;
 			}
-			isDialog = false;
+			*/
 		}
-		);
-		yield break;
-		*/
 	}
+
 	//インタースティシャル広告を表示
-	internal void ShowInterstitial()
+	public void ShowInterstitial()
 	{
-		CreateInterstitial ();
 		currentInterstitial.Show ();
 	}
 
@@ -94,11 +102,19 @@ public class AdMobManager : MonoBehaviour {
 		#endif
 		
 		// Create a 320x50 banner at the top of the screen.
-		BannerView bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
+		currentBannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
 		// Create an empty ad request.
 		AdRequest request = CreateAdRequest();
 		// Load the banner with the request.
-		bannerView.LoadAd(request);
+		currentBannerView.LoadAd(request);
+	}
+	public void ShowBanner()
+	{
+		currentBannerView.Show ();
+	}
+	public void HideBanner()
+	{
+		currentBannerView.Hide ();
 	}
 	
 	private void CreateInterstitial()
@@ -117,7 +133,7 @@ public class AdMobManager : MonoBehaviour {
 
 		// Initialize an InterstitialAd.
 		currentInterstitial = new InterstitialAd (adUnitId);
-		request = CreateAdRequest();
+		var request = CreateAdRequest();
 		// Load the interstitial with the request.
 		currentInterstitial.LoadAd (request);
 		
@@ -129,9 +145,12 @@ public class AdMobManager : MonoBehaviour {
 	{
 		currentInterstitial.Destroy ();
 		currentInterstitial = null;
-		//終了時の広告ならアプリ終了
 		if (quitInterstitialFlag) {
+			//終了時の広告ならアプリ終了
 			Application.Quit ();
+		} else {
+			//終了出ない場合は次のを作っておく
+			CreateInterstitial ();
 		}
 	}
 }

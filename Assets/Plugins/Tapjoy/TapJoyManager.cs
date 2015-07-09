@@ -12,6 +12,22 @@ public class TapJoyManager : MonoBehaviour {
 	[SerializeField] public bool viewIsShowing = false;
 	private bool isConnected = false;
 
+	//シングルトン用
+	public static TapJoyManager Instance {
+		get;
+		private set;
+	}
+	// Use this for initialization
+	void Awake () {
+		if (Instance == null) {
+			//常駐
+			DontDestroyOnLoad (gameObject);
+			Instance = this;
+		} else {
+			Destroy(gameObject);
+			return;
+		}
+	}
 	void Start() {
 		// Connect Delegates
 		Tapjoy.OnConnectSuccess += HandleConnectSuccess;
